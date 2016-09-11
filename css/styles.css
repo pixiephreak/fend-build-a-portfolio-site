@@ -1,0 +1,32 @@
+body{
+	padding-top: 150px;
+
+}
+
+*{
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+#mainNav{
+	padding: 1em;
+	color: #fff;
+}
+
+h1{
+	font-size: 3.5em;
+}
+h2{
+	padding: 10px;
+}
+h3{
+	font-style: italic;
+	font-size: 2em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+       	padding-top: 200px;
+    }
+}
