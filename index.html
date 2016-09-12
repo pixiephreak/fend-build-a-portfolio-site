@@ -16,9 +16,6 @@
 	<!-- javascript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<!-- my css -->
-	<link rel="stylesheet" type="text/css" href="capstone-portfolio.css">
-
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -26,7 +23,7 @@
 	<script src="https://use.fontawesome.com/bdf18541d4.js"></script>
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:350i,350,700" rel="stylesheet">
 
 </head>
 
@@ -47,15 +44,13 @@
 		<div class="collapse navbar-collapse" id=myNavbar>
 	 		<ul class="nav navbar-nav navbar-right">
 	  			<li>
-	  				<!-- TO-DO: change interanal reference -->
-	  				<a class="page-scroll" href="#collection">Portfolio</a>
+	  				<a class="page-scroll" href="#portfolio">Portfolio</a>
 	  			</li>
 	  			<li>
-	  				<!-- TO-DO: change interanal reference -->
+	  				<!-- TO-DO: change interanal reference afer adding content-->
 	  				<a class="page-scroll" href="#about">About</a>
 	  			</li>
 	  			<li>
-	  				<!-- TO-DO: change interanal reference -->
 	  				<a class="page-scroll" href="#contact">Contact</a>
 	  			</li>
 	 		</ul>
@@ -68,13 +63,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-			<div>
-	 		<h1 class="text-right">Jane Claire</h1>
-			<h3 class="text-right">Front-End Yogi</h3>
-			<hr>
-	 	</div>
-				<!-- TO-DO: use <picture element and real img> -->
-				<img class="img-responsive" src="http://placebear.com/g/1800/1800" alt="cover image">
+				<div>
+	 				<h1 class="text-right">Jane Claire</h1>
+					<h3 class="text-right">Front-End Yogi</h3>
+					<hr>
+	 			</div>
+				<!-- TO-DO: use real <img> -->
+				<img class="img-responsive" srcset="http://placebear.com/g/1800/1800" alt="cover image">
+				<!-- bootstrap "img-responsive" looks better than srcset here
+				<picture>
+					<source class="img-responsive" media="(min-width: 1000px)"
+					srcset="http://placebear.com/g/600/600 1x, http://placebear.com/g/1800/1800 2x">
+					<source class="img-responsive" media="(min-width: 500px)"
+					srcset=http://placebear.com/g/100/100 1x, http://placebear.com/g/500/500 2x">
+					<img class="img-responsive" src="http://placebear.com/g/1800/1800" alt="cover image">
+				</picture> -->
 			</div>
 		</div>
 	</div>
@@ -85,37 +88,62 @@
 		<div class="row">
 		<h2>Featured Work</h2>
 			<div class="col-sm-4 text-center img-responsive">
-					<img src="http://placebear.com/g/300/300" alt="portfolio 1">
+				<picture>
+					<source media="(min-width: 768)" src="http://placebear.com/g/250/250" >
+					<img src="http://placebear.com/g/350/350" alt="portfolio-item 1">
+				</picture>
 				<div class="portfolio-caption">
-					<h3> Appify </h3>
+					<h3> Portfolio Item 1 </h3>
 					<p class="text-muted">www.github.com/xxxxxxx</p>
 				</div>
 			</div>
-				<div class="col-sm-4 text-center img-responsive">
-					<img src="http://placebear.com/g/300/300" alt="portfolio 1">
+			<div class="col-sm-4 text-center img-responsive">
+				<picture>
+					<source media="(min-width: 768)" src="http://placebear.com/g/250/250" >
+					<img src="http://placebear.com/g/350/350" alt="portfolio-item 1">
+				</picture>
 				<div class="portfolio-caption">
-					<h3> Sunflower</h3>
+					<h3> Portfolio Item 2</h3>
 					<p class="text-muted">www.github.com/xxxxxxx</p>
 				</div>
 			</div>
-				<div class="col-sm-4 text-center img-responsive">
-					<img src="http://placebear.com/g/300/300" alt="portfolio 1">
+			<div class="col-sm-4 text-center img-responsive">
+				<picture>
+					<source media="(min-width: 768)" src="http://placebear.com/g/250/250" >
+					<img src="http://placebear.com/g/350/350" alt="portfolio-item 1">
+				</picture>
 				<div class="portfolio-caption">
-					<h3> Bokeh </h3>
+					<h3> Portfolio Item 3 </h3>
 					<p class="text-muted">www.github.com/xxxxxxx</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-
-
-
-
-
-
+<footer id="contact">
+	<div class="container">
+		<div class="row">
+			<hr>
+			<div class="col-lg-12 text-center">
+				<ul class="list-inline social-buttons ">
+					<li>
+						<a class="btn btn-social-icon btn-twitter" href="https://twitter.com/StreetSignsLife" target="blank">
+   					 	<i class="fa fa-twitter fa-2x"></i>
+  						</a>
+					</li>
+					<li>
+						<a class="btn btn-social-icon btn-twitter" href="https://www.youtube.com/channel/UC8wOca0XwhAyfVr5lP-mAoQ" target="blank">
+   					 	<i class="fa fa-youtube fa-2x"></i>
+  						</a>
+  					</li>
+  				</ul>
+			</div>
+			<div class="text-center">
+				<p>&copy Jaysees 2016</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
