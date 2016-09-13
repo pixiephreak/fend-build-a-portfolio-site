@@ -24,6 +24,10 @@ h3{
 	font-size: 2em;
 }
 
+#portfolio img{
+	margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 768px) {
     body {
