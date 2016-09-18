@@ -57,5 +57,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
 };
+
