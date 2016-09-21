@@ -13,8 +13,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 	<!-- jquery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- javascript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/styles.css">
@@ -27,6 +25,27 @@
 
 </head>
 
+<!-- TO-DO: CHANGE CONTAINER STRUCTURE
+ Instead of adding a new container class to each section in your page, you could use a single container element to encapsulate all of your content.(SEE FEEDBACK) -->
+
+<div class="container">
+    <header>
+        <div class="row">
+            <!-- ... -->
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <!-- ... -->
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <!-- ... -->
+        </div>
+    </footer>
+</div>
+
 <body id="page-top" class="index">
 <!--Navigation -->
 <nav id="mainNav" class=" navbar-inverse navbar-fixed-top" >
@@ -38,7 +57,7 @@
 	   			<span class="icon-bar"></span>
 	  		</button>
 	  		<!-- TO-DO: use <picture element and real img> -->
-	  		<a class="navbar-left page-scroll" href="#page-top" ><img src="imgs/logo_1x.jpg" srcset="imgs/logo_1x.jpg 1x, imgs/logo_2x.jpg 2x"></a>
+	  		<a class="navbar-left page-scroll" href="#page-top" ><img src="imgs/logo_1x.jpg" srcset="imgs/logo_1x.jpg 1x, imgs/logo_2x.jpg 2x" alt="nav-logo"></a>
 	 	</div>
 
 		<div class="collapse navbar-collapse" id=myNavbar>
@@ -83,6 +102,10 @@
 	</div>
 </header>
 <!-- Portfolio Items -->
+<!-- TO-DO: ADD CLASS TO IMAGES AND CHANGE CSS SELECTOR
+"One more quick tip. We recommend that you don't use element names in conjunction with IDs or classes. Avoiding unnecessary ancestor selectors is useful for performance reasons.
+
+It's better to apply a class to the elements you want to style, and style that class specifically in your CSS file." -->
 <section id="portfolio">
 	<div class="container">
 		<div class="row">
@@ -123,7 +146,9 @@
 <footer id="contact">
 	<div class="container">
 		<div class="row">
-			<hr>
+			<div class="col-xs-12">
+				<hr>
+			</div>
 			<div class="col-lg-12 text-center">
 				<ul class="list-inline social-buttons ">
 					<li>
@@ -138,12 +163,15 @@
   					</li>
   				</ul>
 			</div>
-			<div class="text-center">
+			<div class="col-lg-12 text-center">
 				<p>&copy Jaysees 2016</p>
 			</div>
 		</div>
 	</div>
 </footer>
+
+<!-- javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 </html>

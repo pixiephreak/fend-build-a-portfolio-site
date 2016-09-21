@@ -1,30 +1,40 @@
-body{
+body {
 	padding-top: 150px;
 
 }
 
-*{
+* {
 	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 }
 
-#mainNav{
+#mainNav {
 	padding: 1em;
 	color: #fff;
 }
 
-h1{
 	font-size: 3.5em;
+h1 {
 }
-h2{
+
+h2 {
 	padding: 10px;
 }
-h3{
+
+h3 {
 	font-style: italic;
 	font-size: 2em;
 }
+/*TO-DO: ADD CLASS TO IMAGES AND CHANGE CSS SELECTOR
+"One more quick tip. We recommend that you don't use element names
+in conjunction with IDs or classes.
+Avoiding unnecessary ancestor selectors is useful for performance
+reasons.
 
-#portfolio img{
+It's better to apply a class to the elements you want to style, and style that class
+specifically in your CSS file."
+*/
+#portfolio img {
 	margin: 0 auto;
 }
 
